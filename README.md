@@ -28,7 +28,7 @@ Each script's header comment explains not just what it does but **which outage t
 
 ## Status
 
-**v0 — honest extraction, not yet a product.** These are the canonical copies, adopted across the fleet via a reusable workflow. What v1 needs before you should run it blind: an installer, repo-shape detection, and docs written for someone who isn't me. Star/watch if you want that to exist — this repo is being built in public, decisions and dead ends included, on [orangecat.ch](https://orangecat.ch/profiles/maonakamoto).
+**v0 — honest extraction, not yet a product.** These are the canonical copies, adopted across the fleet via a reusable workflow. What v1 needs before you should run it blind: an installer, repo-shape detection, and docs written for someone who isn't me. Star/watch if you want that to exist — this repo is being built in public, decisions and dead ends included, on [orangecat.ch](https://orangecat.ch/profiles/maonakamoto) — opening entry: ["One Star"](https://orangecat.ch/articles/one-star-c4w71w), the honest baseline this experiment starts from.
 
 ## The story
 
