@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-label="The crewless loop: agents propose pull requests; the verify gate proves them; the sweep merges anything green; reconcilers deploy and publish; live probes confirm; everything is documented in public. The human contributes judgment and, on this night, four security-key taps.">
+  <rect width="1200" height="640" rx="16" fill="#0C0C0E"/>
+  <rect width="1200" height="640" rx="16" fill="none" stroke="#26262B" stroke-width="1"/>
+
+  <text x="64" y="72" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="28" font-weight="600" fill="#F5F5F4">The crewless loop</text>
+  <text x="64" y="104" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="17" fill="#8A8A93">Agents do the work. Gates do the judging. The human does the wanting.</text>
+
+  <!-- five stages -->
+  <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+    <!-- stage box template: w 188 h 128 -->
+    <g>
+      <rect x="64" y="170" width="188" height="132" rx="12" fill="#141419" stroke="#2C2C33"/>
+      <text x="158" y="212" text-anchor="middle" font-size="18" font-weight="600" fill="#F5F5F4">agents propose</text>
+      <text x="158" y="238" text-anchor="middle" font-size="14" fill="#8A8A93">PRs written by a fleet,</text>
+      <text x="158" y="258" text-anchor="middle" font-size="14" fill="#8A8A93">not a person</text>
+    </g>
+    <g>
+      <rect x="286" y="170" width="188" height="132" rx="12" fill="#141419" stroke="#2C2C33"/>
+      <text x="380" y="212" text-anchor="middle" font-size="18" font-weight="600" fill="#F5F5F4">verify proves</text>
+      <text x="380" y="238" text-anchor="middle" font-size="14" fill="#8A8A93">one gate: lint, types,</text>
+      <text x="380" y="258" text-anchor="middle" font-size="14" fill="#8A8A93">build, tests — can go red</text>
+    </g>
+    <g>
+      <rect x="508" y="170" width="188" height="132" rx="12" fill="#141419" stroke="#2C2C33"/>
+      <text x="602" y="212" text-anchor="middle" font-size="18" font-weight="600" fill="#F5F5F4">sweep merges</text>
+      <text x="602" y="238" text-anchor="middle" font-size="14" fill="#8A8A93">green + ready = shipped;</text>
+      <text x="602" y="258" text-anchor="middle" font-size="14" fill="#8A8A93">nobody clicks merge</text>
+    </g>
+    <g>
+      <rect x="730" y="170" width="188" height="132" rx="12" fill="#141419" stroke="#2C2C33"/>
+      <text x="824" y="212" text-anchor="middle" font-size="18" font-weight="600" fill="#F5F5F4">reconcilers repair</text>
+      <text x="824" y="238" text-anchor="middle" font-size="14" fill="#8A8A93">deploy &amp; npm publish ask</text>
+      <text x="824" y="258" text-anchor="middle" font-size="14" fill="#8A8A93">"does live match main?"</text>
+    </g>
+    <g>
+      <rect x="952" y="170" width="184" height="132" rx="12" fill="#141419" stroke="#E06B3A"/>
+      <text x="1044" y="212" text-anchor="middle" font-size="18" font-weight="600" fill="#E06B3A">probes witness</text>
+      <text x="1044" y="238" text-anchor="middle" font-size="14" fill="#8A8A93">a 200 from production,</text>
+      <text x="1044" y="258" text-anchor="middle" font-size="14" fill="#8A8A93">not a green pipeline</text>
+    </g>
+
+    <!-- arrows between stages -->
+    <g stroke="#4A4A55" stroke-width="2" fill="none">
+      <path d="M 252 236 L 282 236"/>
+      <path d="M 474 236 L 504 236"/>
+      <path d="M 696 236 L 726 236"/>
+      <path d="M 918 236 L 948 236"/>
+    </g>
+    <g fill="#4A4A55">
+      <path d="M 282 236 l -8 -5 v 10 z"/>
+      <path d="M 504 236 l -8 -5 v 10 z"/>
+      <path d="M 726 236 l -8 -5 v 10 z"/>
+      <path d="M 948 236 l -8 -5 v 10 z"/>
+    </g>
+
+    <!-- feedback loop: public record back to agents -->
+    <path d="M 1044 302 L 1044 380 Q 1044 400 1024 400 L 178 400 Q 158 400 158 380 L 158 302"
+          fill="none" stroke="#4A4A55" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M 158 302 l -5 8 h 10 z" fill="#4A4A55"/>
+    <rect x="440" y="372" width="322" height="56" rx="12" fill="#0C0C0E" stroke="#2C2C33"/>
+    <text x="601" y="398" text-anchor="middle" font-size="16" font-weight="600" fill="#F5F5F4">everything documented in public</text>
+    <text x="601" y="418" text-anchor="middle" font-size="13" fill="#8A8A93">essays, changelogs, this article — bip-kit eats itself</text>
+
+    <!-- human row -->
+    <line x1="64" y1="472" x2="1136" y2="472" stroke="#1D1D22"/>
+    <text x="64" y="516" font-size="17" font-weight="600" fill="#F5F5F4">The human's contribution to shipping three packages and two migrations in one night:</text>
+    <text x="64" y="548" font-size="16" fill="#E06B3A">wanting it, judging it, and four taps of a security key.</text>
+    <text x="64" y="588" font-size="14" fill="#5C5C66">github.com/maonakamoto/crewless — the harness, extracted from 36 production repos</text>
+  </g>
+</svg>
