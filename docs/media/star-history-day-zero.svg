@@ -25,15 +25,15 @@
   </g>
 
   <!-- area under line -->
-  <path d="M 64 440 L 380 440 L 386 300 L 1136 300 L 1136 440 Z" fill="url(#fade)"/>
+  <path d="M 64 440 L 304 440 L 310 300 L 1136 300 L 1136 440 Z" fill="url(#fade)"/>
   <!-- the line: zero until June 19, then one star, flat since -->
-  <path d="M 64 440 L 380 440 L 386 300 L 1136 300" fill="none" stroke="#E06B3A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 64 440 L 304 440 L 310 300 L 1136 300" fill="none" stroke="#E06B3A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 
   <!-- the one star -->
-  <circle cx="386" cy="300" r="7" fill="#0C0C0E" stroke="#E06B3A" stroke-width="3"/>
+  <circle cx="310" cy="300" r="7" fill="#0C0C0E" stroke="#E06B3A" stroke-width="3"/>
   <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
-    <text x="404" y="284" font-size="16" font-weight="600" fill="#F5F5F4">June 19 — a stranger in Pennsylvania</text>
-    <text x="404" y="306" font-size="15" fill="#8A8A93">finds FleetCrown. Total audience: 1.</text>
+    <text x="328" y="252" font-size="16" font-weight="600" fill="#F5F5F4">June 19 — a stranger in Pennsylvania</text>
+    <text x="328" y="276" font-size="15" fill="#8A8A93">finds FleetCrown. Total audience: 1.</text>
   </g>
 
   <!-- x axis labels -->
