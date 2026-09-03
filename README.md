@@ -4,7 +4,7 @@
 
 This is the harness that lets a solo builder run a software company: AI agents write most of the code, and the machinery in this repo is what makes that safe — nothing merges by hand, nothing deploys unverified, nothing publishes with a credential that could leak.
 
-It is not a framework and it was not designed. Every script here was **extracted from a live fleet** of 36 production repos (own deploys, not customers) ([orangecat.ch](https://orangecat.ch), [fleetcrown.orangecat.ch](https://fleetcrown.orangecat.ch), [datacat.orangecat.ch](https://datacat.orangecat.ch), and 30+ more) after the third time the same problem was solved twice. The comments carry the outage reports that shaped them.
+It is not a framework and it was not designed. Every script here was **extracted from a live fleet** of 36 deployed repositories ([orangecat.ch](https://orangecat.ch), [fleetcrown.orangecat.ch](https://fleetcrown.orangecat.ch), [datacat.orangecat.ch](https://datacat.orangecat.ch), and 30+ more) after the third time the same problem was solved twice. The comments carry the outage reports that shaped them.
 
 ## The three ideas
 
