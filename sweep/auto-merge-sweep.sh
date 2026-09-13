@@ -11,7 +11,7 @@
 #
 #   evig, revampit   infra-failure detection + re-run. An Actions incident left
 #                    main `failure` with no failed job; 11 PRs stranded ~14h.
-#   fleetcrown       DEADLOCK naming — a red base with the fix sitting in the
+#   loki       DEADLOCK naming — a red base with the fix sitting in the
 #                    queue was indistinguishable from "nothing to merge".
 #   the other 19     neither.
 #
@@ -232,7 +232,7 @@ fi
 # Deployment is a RECONCILER, not a chain. A push made with GITHUB_TOKEN emits
 # no workflow_run event, and — one level deeper than anyone expects — neither
 # does a run that GITHUB_TOKEN itself dispatched. So nothing downstream ever
-# wakes on an automated merge. Observed on fleetcrown 2026-08-05: three PRs
+# wakes on an automated merge. Observed on loki 2026-08-05: three PRs
 # merged, main green, zero Deploy runs created. Invisible, because CI itself ran
 # and went green.
 #
@@ -277,7 +277,7 @@ merged_any=0
 
 # OLDEST FIRST. `gh pr list` returns newest-first, and this loop merges the
 # first eligible PR and stops — so the newest green PR wins every sweep and an
-# older one can wait indefinitely. Observed in bitbaum/fleetcrown on
+# older one can wait indefinitely. Observed in bitbaum/loki on
 # 2026-08-06: two consecutive sweeps merged the two newest PRs while three
 # older green ones were never even evaluated. With several agent sessions
 # opening PRs continuously, "newest wins" is starvation, and it starves the PR
